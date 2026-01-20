@@ -1,20 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+  --background-color: #f6eedb;
+  --foreground-color: #141414;
+  --accent-color: #de5d33;
+}
+
 body {
   margin-top: 5%;
-  background-color: #0b0724;
-  color: white;
+  background-color: #f6eedb;
+  color: #141414;
   font-weight: normal;
   font-style: normal;
-  font-family: BariolFont, "Ubuntu", Helvetica, Arial, sans-serif;
-  /*font-family: "Ubuntu", Helvetica, Arial, sans-serif;*/
+  font-family: 'Inter', sans-serif;
+  text-align: center;
 }
 h1 {
   font-size: 80px;
 }
 #mainLogo {
   max-width: 30%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.links {
+  margin: 20px 0;
 }
 
-@font-face {
-  font-family: "BariolFont";
-  src: url("./fonts/bariol_bold-webfont.ttf");
+.links a {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 8px 16px;
+  color: var(--accent-color);
+  text-decoration: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
+
+.links a:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 12px;
+}
+
